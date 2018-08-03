@@ -1,0 +1,33 @@
+{
+  "name": "defered",
+  "version": "0.1.1",
+  "description": "go like defer",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "test": "npm run build && node test.js",
+    "build": "tsc -p tsconfig.json",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joesonw/defered.git"
+  },
+  "keywords": [
+    "go",
+    "defer",
+    "defered",
+    "golike",
+    "go-like",
+    "godefer"
+  ],
+  "author": "Qiaosen Huang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joesonw/defered/issues"
+  },
+  "homepage": "https://github.com/joesonw/defered#readme",
+  "devDependencies": {
+    "typescript": "^3.0.1"
+  }
+}

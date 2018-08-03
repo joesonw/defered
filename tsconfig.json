@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "outDir": "./",
+        "target": "es5",
+        "sourceMap": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "baseUrl": "./"
+    },
+    "compileOnSave": false,
+    "include": [
+        "./index.ts",
+    ],
+    "exclude": [
+        "./node_modules"
+    ]
+}

@@ -9,19 +9,25 @@ defered is a type safe (for typescript) library for go like defer functionalitie
 import * as defered from 'defered';
 
 const test = defered.sync((defer) => (name: string): string => {
-    defer(e => {
-        if (e) {
+    defer((result, err) => {
+        if (err) {
             return 'something went wrong';
         }
         return 'nihao, ' + name;
-    })
+    }) // last 
+    defer((result, err) => {
+        if (err) {
+            return 'something went wrong';
+        }
+        return 'hola, ' + name;
+    }) // first 
     if (Date.now() % 2 == 1) throw new Error('oops');
     return 'hello,' + name;
 });
 
 const test2 = defered.async((defer) => async (name: string): string => {
-    defer(async e => {
-        if (e) {
+    defer(async (result, err) => {
+        if (err) {
             return 'something went wrong';
         }
         return 'nihao, ' + name;

@@ -1,5 +1,10 @@
 
 
+defered is a type safe (for typescript) library for go like defer functionalities.
+
+
+`npm i defered`
+
 ```ts
 import * as defered from 'defered';
 

@@ -30,6 +30,6 @@ const test2 = defered.async((defer) => async (name: string): string => {
     return 'hello,' + name;
 });
 
-test('xiaoming');
+test('xiaoming'); // should be 'nihao, xiaoming' or 'something went wrong'
 testAynsc('xiaoming2').then(...);
 ```

@@ -1,6 +1,6 @@
 {
   "name": "defered",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "go like defer",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/joesonw/defered#readme",
   "devDependencies": {
-    "typescript": "^3.0.1"
+    "@types/node": "^13.1.2",
+    "typescript": "^3.7.4"
   }
 }
